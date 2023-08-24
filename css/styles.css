@@ -120,6 +120,7 @@ body {
 }
 
 /* Main */
+
 .subtitle {
   text-align: center;
   font-size: 36px;
@@ -131,6 +132,7 @@ body {
 }
 
 /* Hero */
+
 .hero {
   padding: 188px 0;
   background: var(--navyblue, #2e2f42);
