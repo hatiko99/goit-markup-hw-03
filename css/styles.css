@@ -6,6 +6,19 @@
   list-style-type: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 img {
   display: block;
 }
@@ -15,8 +28,8 @@ button {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
 }
 
@@ -42,6 +55,8 @@ body {
 }
 
 .logo {
+  margin-right: 76px;
+
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -49,7 +64,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris, #4d5ae5);
-  margin-right: 76px;
 }
 
 .menu {
@@ -68,12 +82,13 @@ body {
 }
 
 .menu-link {
+  padding: 24px 0;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navyblue, #2e2f42);
-  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -117,29 +132,36 @@ body {
 
 /* Hero */
 .hero {
+  padding: 188px 0;
   background: var(--navyblue, #2e2f42);
 }
 
 .hero-title {
-  color: var(--white, #fff);
+  max-width: 496px;
   text-align: center;
-
   font-size: 56px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  color: var(--white, #fff);
 }
 
 .button {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+
   background: var(--iris, #4d5ae5);
-  color: var(--white, #fff);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  color: var(--white, #fff);
 }
 
 .button:hover,
@@ -149,7 +171,21 @@ body {
 
 /* Features */
 
+.features-section {
+  padding: 120px;
+}
+
+.features-list {
+  display: flex;
+  gap: 24px;
+}
+
+.features-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
 .features-list-title {
+  margin-bottom: 8px;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
@@ -176,13 +212,12 @@ body {
 }
 
 .team-list-title {
-  color: var(--navyblue, #2e2f42);
   text-align: center;
-
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--navyblue, #2e2f42);
 }
 
 .team-list-text {
@@ -196,11 +231,11 @@ body {
 /* Portfolio */
 
 .portfolio-list-title {
-  color: var(--navyblue, #2e2f42);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--navyblue, #2e2f42);
 }
 
 .portfolio-list-text {
