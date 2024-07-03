@@ -40,7 +40,19 @@ button {
 
 /* Header */
 
+.header {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+}
+
 .logo-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -52,6 +64,13 @@ button {
 
 .logo-link-color {
     color: #2E2F42;
+}
+
+.header-menu-list {
+    display: flex;
+    column-gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -68,7 +87,16 @@ button {
 }
 
 .header-contacts {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: auto;
+
     font-style: normal;
+}
+
+.header-contacts-list {
+    display: flex;
+    column-gap: 40px;
 }
 
 .header-contacts-link {
